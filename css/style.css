@@ -1344,7 +1344,7 @@
         .block-steps .row .mt2,
         .block-steps .row .mt1 {
             margin-left: 0;
-            margin-top: 50px;
+            margin-top: 0;
         }
         .block-steps .step4,
         .block-steps .row.anime .step4 {
