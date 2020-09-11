@@ -1339,16 +1339,16 @@
             margin: 0 auto;
         }
         .block-steps .col .img {
-            margin-left: 0;
-            display: flex;
-            justify-content: flex-end;
+            display: none;
         }
-        .block-steps .row .mt2 {
+        .block-steps .row .mt2,
+        .block-steps .row .mt1 {
             margin-left: 0;
+            margin-top: 50px;
         }
         .block-steps .step4,
         .block-steps .row.anime .step4 {
-            transform: translateY(150px);
+            transform: translateY(0);
         }
         .block-licenses .col {
             margin: 0 auto 50px;
@@ -1414,10 +1414,13 @@
         .block-steps .block-form {
             padding: 50px 15px 15px;
             height: auto;
+            top: 0;
         }
         .block-steps .block-form h4,
         .block-steps .block-form form {
             width: 100%;
+            max-width: 403px;
+            margin: 0 auto;
         }
         .block-steps .block-form form {
             text-align: center;
@@ -1512,21 +1515,14 @@
             width: 200px;
             margin: 0;
         }
+        .block-steps .col .img {
+            display: none;
+        }
         .block-steps .col img {
             width: 100%;
         }
         .block-steps .col .titel {
             font-size: 40px;
-        }
-        .block-steps .mt1 {
-            min-width: 600px;
-            max-width: 700px;
-            justify-content: space-between;
-        }
-        .block-steps .row .mt2 {
-            min-width: 400px;
-            max-width: 450px;
-            justify-content: space-between;
         }
         .block-rewiew {
             padding: 50px;
@@ -1547,5 +1543,50 @@
         }
         footer .social {
             width: auto;
+        }
+    }
+    
+    @media (min-width:800px) and (max-width:949px) {
+        .block-steps .row {
+            min-height: 400px;
+        }
+        .block-steps .mt1 {
+            position: absolute;
+            margin-top: 0;
+            width: 90%;
+        }
+        .block-steps .col {
+            width: 48%;
+        }
+        .block-steps .step2 {
+            position: relative;
+            left: 358px;
+        }
+        .block-steps .step4,
+        .block-steps .row.anime .step4 {
+            transform: translateY(0);
+        }
+    }
+    
+    @media (min-width:950px) and (max-width:1024px) {
+        .block-steps {
+            min-height: 500px;
+            margin-bottom: 0;
+        }
+        .block-steps .mt1 {
+            max-width: calc(100% - 230px);
+            justify-content: space-between;
+            transform: translateY(0);
+            margin-top: 0%;
+        }
+        .block-steps .row .mt2 {
+            max-width: 450px;
+            justify-content: space-between;
+            transform: translateY(0);
+            margin-top: 0%;
+        }
+        .block-steps .row .step4 {
+            margin-top: 0%;
+            transform: translateY(0);
         }
     }
