@@ -321,6 +321,15 @@
         padding-left: 6em;
         transform-origin: right;
     }
+    .block-solution .row:hover .col:nth-child(2n+1) {
+        padding-left: 9.5em;
+        transform-origin: left;
+    }
+    
+    .block-solution .row:hover .col:nth-child(2n) {
+        padding-left: 4em;
+        transform-origin: right;
+    }
     
     .block-solution .blue {
         background: #0CA0C4;
@@ -368,7 +377,7 @@
     }
     
     .block-solution .row:hover h4 {
-        font-size: 4.5em;
+        font-size: 4.4em;
         line-height: 1;
         position: relative;
         z-index: 5;
@@ -1508,13 +1517,17 @@
         .block-solution .row:hover .col:nth-child(2n+1) {
             position: inherit;
         }
-        .block-solution .row:hover h4 {
+        .block-solution .row h4,.block-solution .row:hover h4{
             font-size: 2.8em;
             line-height: 51px;
+            position: relative;
+            z-index: 5;
         }
-        .block-solution .row:hover p {
+        .block-solution .row p, .block-solution .row:hover p {
             font-size: 1.5em;
             line-height: 51px;
+            position: relative;
+            z-index: 5
         }
         @keyframes form-animate {
             0% {}
@@ -1589,9 +1602,7 @@
         .block-solution .col p {
             padding-left: 30px;
         }
-        .block-solution .col h4 {
-            font-size: 2.5em;
-        }
+      
     }
     
     @media (min-width:769px) and (max-width:1024px) {
