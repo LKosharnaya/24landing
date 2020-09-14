@@ -18,7 +18,7 @@
     }
     
     .content {
-        width: 94%;
+        width: 100%;
         max-width: 1520px;
         margin: 0 auto;
     }
@@ -420,10 +420,11 @@
             left: 0
         }
         100% {
-            width: calc(50% + ((100vw - 1538px) / 2));
+            width:50vw;
             transition: width 2s ease;
             padding-top: 100px;
-            transform: translateX(calc((100vw - 1538px) / -2))
+            transform: translateX(calc((100vw - 1538px) / -2));
+            
         }
     }
     
@@ -1248,7 +1249,8 @@
         margin-left: 50px;
     }
     
-    @media (min-width:1025px) and (max-width:1530px) {
+    @media (min-width:1025px) and (max-width:1520px) {
+        .content {width: 94%;}
         html {
             font-size: 14px
         }
@@ -1263,10 +1265,10 @@
                 left: 0
             }
             100% {
-                width: calc(50% + (10vw / 2));
+                width: 49.5vw;
                 transition: width 2s ease;
                 padding-top: 100px;
-                transform: translateX(calc(10vw / -2))
+                transform: translateX(-3vw)
             }
         }
         @keyframes right-animate {
@@ -1275,11 +1277,11 @@
                 left: 50%;
             }
             100% {
-                width: calc(50% + (10vw / 2));
+                width: 49.5vw;
                 left: 50%;
                 padding-top: 100px;
                 transition: width 2s ease;
-                transform: translateX(calc(10vw / -2)px)
+               
             }
         }
         .block-steps .col {
@@ -1315,6 +1317,7 @@
     }
     
     @media (max-width:1024px) {
+        .content {width: 94%;}
         header {
             padding-top: 20px;
         }
