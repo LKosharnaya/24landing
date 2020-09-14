@@ -1419,10 +1419,11 @@
         .block-solution .row .green:after {
             background: linear-gradient(180deg, #00A607 0%, rgba(0, 166, 7, 0) 100%);
         }
-        .block-solution .col:nth-child(2n+1) {
+        .block-solution .col:nth-child(2n+1),.block-solution .row:hover .col:nth-child(2n+1) {
+            
             padding-left: 15px;
         }
-        .block-solution .col:nth-child(2n) {
+        .block-solution .col:nth-child(2n), .block-solution .row:hover .col:nth-child(2n) {
             padding-left: 15px;
         }
         .block-data .col {
