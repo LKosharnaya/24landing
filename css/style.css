@@ -322,7 +322,7 @@
         transform-origin: right;
     }
     .block-solution .row:hover .col:nth-child(2n+1) {
-        padding-left: 9.5em;
+        padding-left: 7.5em;
         transform-origin: left;
     }
     
@@ -377,7 +377,7 @@
     }
     
     .block-solution .row:hover h4 {
-        font-size: 4.4em;
+        font-size: 4em;
         line-height: 1;
         position: relative;
         z-index: 5;
